@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*alineacion de la pagina princiapl*/
+#Inicio {
+text-align: center;
+        }
+
+/*Botones de mas informacion*/
+@media screen and (min-width: 10px){
+ .ajuste {
+  display: inline-block;
+	     }
+                                   } 
+
+/*Paginas en general(La principal no)*/
+/*hs y parrafos*/
+.textos p{
+margin-top: 0px; 
+         }
+.textos h3{
+margin-bottom: 0px; 
+          }  
+
+/*alineaciones*/          
+.Paginas {
+width: 90%;
+text-align: center;
+margin: 0 auto; 
+         }
+
+.Paginas p {
+text-align: justify;
+           }  
+
+/*Botones de siguiente e inicio*/
+.Botones a {
+display: inline-block;
+float: right;
+margin-left: 10px;
+-moz-box-shadow: 2px 4px 4px #000000 ;
+-webkit-box-shadow: 2px 4px 4px #000000 ;
+caja-sombra: 2px 4px 4px #000000 ;
+font-size: .9em;
+           }
+
+
+/*Pagina1*/
+/*Boton de mas informacion*/
+#MasInfo a{
+color: white;
+padding: 10px;
+border-radius: 20px;
+background-color: #60B150;
+text-decoration: none;
+display: inline-block;
+          }
+
+/*Pagina5*/
+/*Visor*/
+#Visor {
+margin-top: 10px;
+width: 95%;
+display: inline-block;
+       }

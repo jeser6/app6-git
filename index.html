@@ -1,0 +1,397 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>Batalla de Puebla</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="js/acciones.js" type="text/javascript"></script>-->
+
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head> 
+
+<body onLoad="MM_preloadImages('imagenes/4mayo1.jpg','imagenes/museo5mayo1.jpg','imagenes/estatuta5Mayo2.jpg','imagenes/estatuta15Mayo2.jpg')"> 
+
+<!--Pagina principal-->
+<div data-role="page" id="Inicio" data-theme="a">
+
+<!--Encabezado pagina principal-->
+  <div data-role="header">
+   <h1>Batalla de Puebla</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div data-role="main" align="center">
+
+<!--Boton de información del 4 de mayo-->
+   <div data-role="listview">
+    <li>
+     <a href="#page1" >
+      <h1>4 de Mayo</h1>
+      <p>Se muestra una parte del acontesimiento</p>
+     </a>
+    </li>
+   </div>
+<!--Boton de imagenes del 4 de mayo-->
+  <div data-role="collapsible">
+   <h1>Imagenes</h1>
+   <p>4 de Mayo</p>
+   <a  href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('4deMayp','','imagenes/4mayo1.jpg',1)"><img src="imagenes/4mayo2.jpg" name="4deMayp" width="50%" height="40%"></a>
+  </div> 
+ 
+ <!--Boton de información del 5 de mayo-->
+   <div data-role="listview">
+    <li>
+     <a href="#page2" >
+      <h1>5 de Mayo</h1>
+      <p>Se muestra una parte del acontesimiento</p>
+     </a>
+    </li>
+   </div>
+ <!--Boton de mas información del 5 de mayo-->
+    <div class="ajuste">
+      <a href="http://www.eluniversal.com.mx/articulo/cultura/2017/05/5/seis-datos-sobre-la-batalla-del-5-de-mayo" target="_self" data-role="button">Mas información</a>
+    </div>
+
+ <!--Boton de información del Inicio del conflicto-->
+   <div data-role="listview">
+    <li>
+     <a href="#page3" >
+      <h1>Inicio del conflicto</h1>
+      <p>Se muestra una parte del acontesimiento</p>
+     </a>
+    </li>
+   </div>
+ <!--Boton de mas información del Inicio del conflicto-->
+    <div class="ajuste">
+      <a href="http://www.dias-festivos-mexico.com.mx/dias-feriados/batalla-puebla/" target="_self" data-role="button">Mas información</a>
+    </div>
+
+<!--Boton de información Monumentos de la batalla y/o museos-->
+   <div data-role="listview">
+    <li>
+     <a href="#page4" >
+      <h1>Monumentos de la batalla y/o museos que existen sobre el tema</h1>
+      <p>Muestra información (Donde estan, significado, etc..)</p>
+     </a>
+    </li>
+   </div>
+<!--Boton de imagenes Monumentos de la batalla y/o museos-->
+  <div data-role="collapsible">
+    <h1>Imagenes</h1>
+    <p>Estas son de monumentos y/o museos</p>
+     <p>Museo interectivo</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('museos1','','imagenes/museo5mayo1.jpg',1)"><img src="imagenes/museo5mayo.jpg" name="museos1" width="50%" height="40%" border="0"></a>
+     <br>
+     <p>Monumento a La Victoria 5 de Mayo</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('estatuaMayo','','imagenes/estatuta5Mayo2.jpg',1)"><img src="imagenes/estatuta5Mayo.jpg" name="estatuaMayo" width="50%" height="40%" border="0"></a>
+     <br>
+     <p>Monumento a los Héroes de 5 de Mayo</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('estatuaMayo2','','imagenes/estatuta15Mayo2.jpg',1)"><img src="imagenes/estatuta15Mayo.jpg" name="estatuaMayo2" width="50%" height="40%" border="0"></a>
+  </div> 
+  <!--Boton de mas información Monumentos de la batalla y/o museos-->
+    <div class="ajuste">
+      <a href="http://www.museospuebla.puebla.gob.mx/index.php/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" target="_self" data-role="button">Mas información</a>
+    </div>
+    
+ <!--Boton de información de los herores-->
+   <div data-role="listview">
+    <li>
+     <a href="#page5" >
+      <h1>Héroes de la batalla</h1>
+      <p>Muestra los difeterentes heroes de las batallas</p>
+     </a>
+    </li>
+   </div>
+ <!--Boton de mas información de los heroreso-->
+    <div class="ajuste">
+      <a href="https://www.vanguardia.com.mx/especialvanguardia5demayolosheroesdelabatallaimposible-495399.html" target="_self" data-role="button">Mas información</a>
+    </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina principal-->
+  <div data-role="footer" align="center" data-position="fixed">
+   <h1>Aplicación 6 / Jeser Martínez Grande</h1>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+
+</div><!--Fin Pagina principal-->
+
+ <!--PAGINA 1-->
+ <div data-role="page" id="page1" data-theme="a"> 
+
+<!--Encabezado pagina1-->
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+   <h1>4 de Mayo de 1862</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div class="Paginas">
+   <p>Un 4 de mayo de 1862, Atlixco, enfrenta una batalla en contra de conservadores que pretendían sumarse al Ejército Francés. Hecho decisivo en la epopeya del 5 de Mayo, que hoy es parte de la historia nacional.
+   <br>
+   Benito Juárez creó una medalla reconociendo esta aportación de los atliscenses  que señalaba: “Derrotando a los traidores el 4 de mayo, contribuyó eficazmente al triunfo alcanzado en Puebla en contra del Ejército Francés el 5 de mayo de 1862”
+   <br>
+   El propio gobierno de Benito Juárez consideró que sin el triunfo del 4 de mayo en Atlixco, no hubiera sido posible la victoria del 5 de mayo en Puebla.
+   </p>
+
+   <div id="MasInfo">
+    <a href="https://www.sabersinfin.com/articulos/historia/6710-4-de-mayo-de-1862i" target="_self">Mas información</a>
+   </div>
+
+   <div class="Botones">
+     <a href="#page2" data-role="button">Siguiente</a>
+   </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina1-->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicación 6 / Jeser Martínez Grande</h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div><!--Fin pagina1-->
+
+
+<!--PAGINA 2-->
+ <div data-role="page" id="page2" data-theme="a">
+
+<!--Encabezado pagina2-->
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+   <h1>5 de Mayo de 1862</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div class="Paginas">
+   <p>Se llevó a cabo el cinco de mayo de 1862 ,hace más de 150 años.En ella , una pequeña fuerza de soldados y campesinos mexicanos se enfrentó a un numeroso y mejor quipado ejército francés en una capilla en cima del cerro de Loreto, con el fin de evitar que la ciudad de puebla cayera en manos del emperador franceés Napoleón III
+   <br>
+   Al mando del general Ignacio de Zaraoza ,las fuerzas mexianas triunfaron e hiceron retroceder al entonce mejor ejército del mundo.La victoria ,aunque corta poco significativa ,fue motivo de celebración para todo el país ,pues llenó de orgullo y potenció la moral de México asediado po Francia
+   </p> 
+    
+  <div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mayo5','','imagenes/mayo51.jpg',0)"><img src="imagenes/mayo5.jpg" name="mayo5" width="70%" height="60%" ></a>
+  </div>
+
+   <div class="Botones">
+     <a href="#page3" data-role="button">Siguiente</a>
+     <a href="#Inicio" data-role="button">Inicio</a>
+   </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina2-->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicación 6 / Jeser Martínez Grande</h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div><!--Fin pagina2-->
+
+
+<!--PAGINA 3-->
+ <div data-role="page" id="page3" data-theme="a">
+
+<!--Encabezado pagina3-->
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+   <h1>Inicio del conflicto</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div class="Paginas">
+   <p>El presidente Benito Juárez declaró el 17 de julio de 1861, una moratoria de dos años en el pago de deudas a prestamistas extranjeros. Posteriormente, en octubre de ese mismo año, Francia, Inglaterra y España acordaron intervenir la República para exigir el pago de sus deudas.
+   <br>
+   En octubre de 1861, Francia, Inglaterra y España firmaron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México. La Alianza Tripartita amenazó al presidente Benito Juárez con invadir el país si no se saldaba por completo las deudas con los tres países europeos.
+  </p>
+    
+  <div>
+  <img src="imagenes/5mayo.jpg" width="70%" height="60%">
+  </div>
+
+   <div class="Botones">
+     <a href="#page4" data-role="button">Siguiente</a>
+     <a href="#Inicio" data-role="button">Inicio</a>
+   </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina3-->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicación 6 / Jeser Martínez Grande</h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div><!--Fin pagina3-->
+
+
+<!--PAGINA 4-->
+ <div data-role="page" id="page4" data-theme="a">
+
+<!--Encabezado pagina4-->
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+   <h1>Monumentos de la batalla y/o museos</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div class="Paginas">
+  <div class="textos">
+  <h3>Museo interactivo</h3>
+   <p>El interactivo narra las acciones militares y contiene las biografías de héroes nacionales como Ignacio Zaragoza, a través de pantallas táctiles, proyecciones en 3-D y contenidos interactivos descargables en dispositivos.
+   <br>
+   Hubicación: Av. Ejercito de Oriente s/n, Calle Laureles S/N Unidad Cívica 5 de Mayo. Los Fuertes, 72260 Puebla, Pue.
+   </p>
+   <h3>Monumento a La Victoria 5 de Mayo</h3>
+   <p>Recibe su nombre debido a que aquí el ejercito mexicano libró una poderosa batalla contra el ejercito francés, durante la Segunda Intervención Francesa el 5 de mayo de 1862. Dicha batalla fue liderada por el General Ignacio Zaragoza, que estaba a cargo del Ejercito de Oriente. La batalla fue ganada por el ejercito mexicano, lo que llenó de orgullo al país, y sobre todo a la gente de Puebla.
+   <br>
+   Hubicación: Zona Histórica de Los Fuertes Centro Histórico 72000 Puebla
+   </p>
+   <h3>Monumento a los Héroes de 5 de Mayo</h3>
+   <p>Este monumento está justo frente al Parque Analco, sobre el Boulevard 5 de Mayo; es pequeño pero creo que es uno de los más representativos de la historia esta ciudad. Su nombre es el Monumento a los Héroes del 5 de Mayo, y es un pequeño homenaje a los soldados y pobladores que se enfrentaron al ejercito francés el 5 de mayo de 1862, durante la Segunda Invasión Francesa en México. 
+   <br>
+   Hubicación: 3 oriente centro 72000 Puebla
+   </p>
+  </div>
+
+   <div class="Botones">
+     <a href="#page5" data-role="button">Siguiente</a>
+     <a href="#Inicio" data-role="button">Inicio</a>
+   </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina4-->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicación 6 / Jeser Martínez Grande</h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div><!--Fin pagina4-->
+
+
+<!--PAGINA 5-->
+ <div data-role="page" id="page5" data-theme="a">
+
+<!--Encabezado pagina5-->
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+   <h1>Héroes de la batalla</h1>
+  </div>
+
+<!--Cuerpo-->
+  <div class="Paginas">
+
+  <div id="Visor">
+   <!-- Start WOWSlider.com BODY section -->
+   <div id="wowslider-container1">
+   <div class="ws_images"><ul>
+   <li><img src="data1/images/benitojuarez.jpg" alt="Benito Juarez" title="Benito Juarez" id="wows1_0"/></li>
+   <li><img src="data1/images/felipeberriozabal.jpg" alt="Felipe Berriozábal" title="Felipe Berriozábal" id="wows1_1"/></li>
+   <li><img src="data1/images/ignaciozaragoza.jpg" alt="Ignacio Zaragoza" title="Ignacio Zaragoza" id="wows1_2"/></li>
+   <li><img src="data1/images/juannepomucenoalmonte.jpg" alt="Juan Nepomuceno Almonte" title="Juan Nepomuceno Almonte" id="wows1_3"/></li>
+   <li><img src="data1/images/juannmendez.png" alt="Juan N. Méndez" title="Juan N. Méndez" id="wows1_4"/></li>
+   <li><img src="data1/images/miguelnegrete.jpg" alt="Miguel Negrete" title="Miguel Negrete" id="wows1_5"/></li>
+   <li><a href="http://wowslider.net"><img src="data1/images/porfiriodiaz.jpg" alt="javascript photo gallery" title="Porfirio Díaz" id="wows1_6"/></a></li>
+   <li><img src="data1/images/tomasohoran.jpg" alt="Tomás O'Horán y Escudero" title="Tomás O'Horán y Escudero" id="wows1_7"/></li>
+   </ul></div>
+   <div class="ws_bullets"><div>
+   <a href="#" title="Benito Juarez"><span><img src="data1/tooltips/benitojuarez.jpg" alt="Benito Juarez"/>1</span></a>
+   <a href="#" title="Felipe Berriozábal"><span><img src="data1/tooltips/felipeberriozabal.jpg" alt="Felipe Berriozábal"/>2</span></a>
+   <a href="#" title="Ignacio Zaragoza"><span><img src="data1/tooltips/ignaciozaragoza.jpg" alt="Ignacio Zaragoza"/>3</span></a>
+   <a href="#" title="Juan Nepomuceno Almonte"><span><img src="data1/tooltips/juannepomucenoalmonte.jpg" alt="Juan Nepomuceno Almonte"/>4</span></a>
+   <a href="#" title="Juan N. Méndez"><span><img src="data1/tooltips/juannmendez.png" alt="Juan N. Méndez"/>5</span></a>
+   <a href="#" title="Miguel Negrete"><span><img src="data1/tooltips/miguelnegrete.jpg" alt="Miguel Negrete"/>6</span></a>
+   <a href="#" title="Porfirio Díaz"><span><img src="data1/tooltips/porfiriodiaz.jpg" alt="Porfirio Díaz"/>7</span></a>
+   <a href="#" title="Tomás O'Horán y Escudero"><span><img src="data1/tooltips/tomasohoran.jpg" alt="Tomás O'Horán y Escudero"/>8</span></a>
+   </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.8</div>
+   <div class="ws_shadow"></div>
+  </div>  
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+  <!-- End WOWSlider.com BODY section -->
+  </div>
+
+  <div class="textos">
+  <h3>Ignacio Zaragoza</h3>
+   <p>
+   Encabezó la defensa mexicana frente a la ofensiva francesa encabezada por Carlos Latrille, mejor conocido como el Conde de Lorencez. 
+   </p>
+ 
+   <h3>Miguel Negrete</h3>
+   <p>
+   Es considerado por algunos historiadores como el verdadero héroe de la Batalla de Puebla. Durante la Guerra de Reforma participó del lado de los conservadores. Sin embargo, cuando la nación se vio invadida, se acogió a la amnistía que el Presidente Benito Juárez extendió a todos sus antiguos enemigos, incorporándose así a las filas republicanas.
+   </p> 
+
+   <h3>Porfirio Díaz</h3>
+   <p>
+   Militar valiente de origen oaxaqueño, Díaz llenó su nombre de gloria con una destacada participación durante el 5 de Mayo.
+   </p>
+
+   <h3>Felipe Berriozába</h3>
+   <p>
+   Político, ingeniero, Ministro de Guerra y Marina; General de división. Sirvió de 1849 hasta el 1900 con lealtad en el Ejército mexicano, Felipe Berriozábal participó en la Primera intervención estadounidense en México, la Guerra de Reforma y la Segunda Intervención Francesa en México y formó parte de los gobiernos de Benito Juárez y Porfirio Díaz. 
+   </p>
+
+   <h3>Benito Juárez</h3>
+   <p>
+   Después de que anunciara que no pagaría la deuda externa, en octubre de 1861, Francia, Inglaterra y España se comprometieron a enviar contingentes militares a México para reclamar sus derechos como acreedores por una deuda que ascendía a alrededor de 80 millones de pesos.
+   </p>
+
+   <h3>Tomás O'Horán </h3>
+   <p>
+   El 4 de mayo, los exploradores mexicanos volvieron con noticias de que una columna de conservadores a caballo, al mando de Leonardo Márquez y José María Cobos, marchaba por la zona de Atlixco para unirse con las fuerzas de Lorencez en el ataque a Puebla. Zaragoza envió una brigada de 2000 hombres bajo el mando de Tomás O'Horán y Antonio Carbajal, con el fin de detenerlo, lo cual lograron.
+   </p>
+
+   <h3>Juan Nepomuceno Almonte</h3>
+   <p>
+   El general conservador Juan Nepomuceno Almonte, quien de inmediato se proclamó "jefe supremo de la nación" y empezó a reunir a las tropas conservadoras, remanentes de la Guerra de Reforma, para apoyar a los franceses.
+   </p>
+
+   <h3>Juan Nepomuceno Méndez</h3>
+   <p>
+   El 6o. Batallón de la Guardia Nacional del Estado de Puebla,7​ bajo el mando del entonces coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses, al ubicarse en la línea comprendida entre los fuertes, y rechazar su ataque
+   </p>
+   </div>
+   <div class="Botones">
+     <a href="#Inicio" data-role="button">Inicio</a>
+   </div>
+  </div><!--Fin Cuerpo-->
+
+<!--Footer pagina5-->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicación 6 / Jeser Martínez Grande</h4>
+   <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div><!--Fin pagina5-->
+
+</body>
+
+</html>
